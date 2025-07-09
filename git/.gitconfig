@@ -1,0 +1,56 @@
+# .gitconfig
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+## Credentials configuration.
+[credential "https://gist.github.com"]
+	helper = gh auth git-credential
+
+[credential "http://git.mmosandbox.club"]
+	provider = generic
+
+## User configuration.
+[user]
+	signingkey = 9D72FAE2BF6BD2CA
+	name = reanimatedmanx
+	email = me@rmx.codes
+
+## User signing ID.
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+
+## Core configuration.
+[core]
+	autocrlf = "input"
+	editor = code --wait
+	sshCommand = ssh
+
+[safe]
+	directory = *
+[tag]
+	gpgsign = true
+
+## DX
+[alias]
+    # Commit status
+	st = status
+	# Commit short status
+	sts = status -s
+	# Commit with a message
+	cm = commit -m
+	# Checkout branch
+	ch = checkout
+	# Checkout new branch
+	br = checkout -b 
+	# Restore a file
+	rs = restore --staged
+
+## Git LFS configuration.
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
