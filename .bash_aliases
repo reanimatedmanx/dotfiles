@@ -8,18 +8,18 @@ alias ..='cd ..'
 alias ~='cd ~'
 
 ## `lp` - List Permissions
-alias lp='ls -Fal --color=auto'
+alias lp='ls -Falh --color=auto'
 
-## `lc` - List files - Classified.
-alias lc='ls -FC --color=auto'
-
-## `la` - List All files (including hidden).
+## `la` - List all files.
 alias la='ls -A --color=auto'
+
+## `lc` - List all classified files
+alias lc='ls -FCA --color=auto'
 
 # Git
 alias gg='git'
 alias gs='gg st'
-alias gsl='git log --oneline --graph --decorate'
+alias gl='git log --oneline --graph --decorate'
 
 # Editors
 alias code='code .'

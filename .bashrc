@@ -7,7 +7,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # --- Useful Functions ---
-extract () {
+unzip () {
     if [ -f "$1" ]; then
         case "$1" in
             *.tar.bz2)   tar xjf "$1"    ;;
@@ -29,28 +29,8 @@ extract () {
 }
 
 # --- Environment Variables ---
-export EDITOR=nvim
-export VISUAL=nvim
-export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
-
-# --- Git Branch in Prompt (optional) ---
-parse_git_branch() {
-    git branch 2>/dev/null | grep '*' | sed 's/* //'
-}
-export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[36m\]\$(parse_git_branch)\[\e[0m\]\n\$ "
-
-# --- Source user-specific bashrc if exists ---
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# --- Suggestions for more productivity ---
-# - Add fzf for fuzzy file finding: https://github.com/junegunn/fzf
-# - Add autojump or z for fast directory switching
-# - Add asdf or nvm for managing language versions
-# - Add starship for a cross-shell prompt
-# - Add direnv for project-specific environment variables
-# - Add docker and kubectl completions if you use them
+export EDITOR=code
+export VISUAL=code
 
 # --- Enable bash completion if available ---
 if [ -f /etc/bash_completion ]; then
