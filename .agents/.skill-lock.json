@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "skills": {
+    "migrate-to-vinext": {
+      "source": "cloudflare/vinext",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudflare/vinext.git",
+      "skillPath": ".agents/skills/migrate-to-vinext/SKILL.md",
+      "skillFolderHash": "c11b7182426827d38ffaa18c71f9587e524f72e7",
+      "installedAt": "2026-02-27T20:32:29.311Z",
+      "updatedAt": "2026-02-27T20:32:29.311Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-02-27T20:32:37.527Z",
+      "updatedAt": "2026-02-27T20:32:37.527Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  }
+}
